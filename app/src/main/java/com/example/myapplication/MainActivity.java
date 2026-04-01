@@ -13,16 +13,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 1. Buscamos el botón por el ID definido en activity_main.xml
+
         Button btn = findViewById(R.id.btnPrincipal);
 
-        // 2. Configuramos el evento de clic
-        // Usamos MainActivity.this para ser específicos con el contexto
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // 3. Navegar a DashboardActivity
-                // Asegúrate de que DashboardActivity esté creada en tu proyecto
+
                 Intent intent = new Intent(MainActivity.this, DashboardActivity.class);
                 startActivity(intent);
             }
